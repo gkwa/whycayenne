@@ -37,9 +37,17 @@ apply:
 # Plan and apply Terraform changes
 plan-apply: plan apply
 
-# Destroy Terraform resources
+# Destroy Terraform resources (interactive)
 destroy:
     terraform -chdir=terraform destroy
+
+# Plan destroy and save to destroy.tfplan
+plan-destroy:
+    terraform -chdir=terraform plan -destroy -out=destroy.tfplan
+
+# Apply destroy plan without prompting
+destroy-auto: plan-destroy
+    terraform -chdir=terraform apply -auto-approve destroy.tfplan
 
 # Show Terraform state
 show:
@@ -51,11 +59,11 @@ list:
 
 # Clean up Terraform files
 clean:
-    rm -rf terraform/.terraform terraform/tfplan
+    rm -rf terraform/.terraform terraform/tfplan terraform/destroy.tfplan
 
 # Full cleanup: remove all generated files and Terraform state
 cleanup:
-    rm -rf terraform/.terraform terraform/.terraform.lock.hcl terraform/terraform.tfstate terraform/terraform.tfstate.backup terraform/tfplan
+    rm -rf terraform/.terraform terraform/.terraform.lock.hcl terraform/terraform.tfstate terraform/terraform.tfstate.backup terraform/tfplan terraform/destroy.tfplan
     @echo "Cleanup complete. Project reset to initial state."
 
 # Run all pre-apply checks
