@@ -6,7 +6,9 @@ provider "aws" {
 # Create the DynamoDB table
 resource "aws_dynamodb_table" "product_table" {
   name           = "ProductTable"
-  billing_mode   = "PAY_PER_REQUEST"
+  billing_mode   = "PROVISIONED"
+  read_capacity  = 1
+  write_capacity = 1
   hash_key       = "PK"
   range_key      = "SK"
 
@@ -36,11 +38,13 @@ resource "aws_dynamodb_table" "product_table" {
     hash_key           = "GSI1PK"
     range_key          = "GSI1SK"
     projection_type    = "ALL"
+    read_capacity      = 1
+    write_capacity     = 1
   }
 
   tags = {
     Name        = "product-table"
-    Environment = "Production"
+    Environment = "Demo"
   }
 }
 
