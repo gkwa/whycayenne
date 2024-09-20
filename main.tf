@@ -34,12 +34,12 @@ resource "aws_dynamodb_table" "product_table" {
 
   # Global Secondary Index for category-based queries
   global_secondary_index {
-    name               = "GSI1"
-    hash_key           = "GSI1PK"
-    range_key          = "GSI1SK"
-    projection_type    = "ALL"
-    read_capacity      = 1
-    write_capacity     = 1
+    name            = "GSI1"
+    hash_key        = "GSI1PK"
+    range_key       = "GSI1SK"
+    projection_type = "ALL"
+    read_capacity   = 1
+    write_capacity  = 1
   }
 
   tags = {
