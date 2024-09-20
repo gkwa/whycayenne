@@ -12,7 +12,7 @@ format-justfile:
 
 # Format Terraform files
 format-terraform:
-    terraform fmt -recursive
+    terraform -chdir=terraform fmt
 
 # Format all files (Justfile and Terraform)
 format-all: format-justfile format-terraform
@@ -20,42 +20,42 @@ format-all: format-justfile format-terraform
 
 # Initialize Terraform
 init:
-    terraform init
+    terraform -chdir=terraform init
 
 # Validate Terraform files
 validate:
-    terraform validate
+    terraform -chdir=terraform validate
 
 # Plan Terraform changes and save to tfplan
 plan:
-    terraform plan -out=tfplan
+    terraform -chdir=terraform plan -out=tfplan
 
 # Apply Terraform changes from saved plan
 apply:
-    terraform apply tfplan
+    terraform -chdir=terraform apply tfplan
 
 # Plan and apply Terraform changes
 plan-apply: plan apply
 
 # Destroy Terraform resources
 destroy:
-    terraform destroy
+    terraform -chdir=terraform destroy
 
 # Show Terraform state
 show:
-    terraform show
+    terraform -chdir=terraform show
 
 # List Terraform resources
 list:
-    terraform state list
+    terraform -chdir=terraform state list
 
 # Clean up Terraform files
 clean:
-    rm -rf .terraform tfplan
+    rm -rf terraform/.terraform terraform/tfplan
 
 # Full cleanup: remove all generated files and Terraform state
 cleanup:
-    rm -rf .terraform .terraform.lock.hcl terraform.tfstate terraform.tfstate.backup tfplan
+    rm -rf terraform/.terraform terraform/.terraform.lock.hcl terraform/terraform.tfstate terraform/terraform.tfstate.backup terraform/tfplan
     @echo "Cleanup complete. Project reset to initial state."
 
 # Run all pre-apply checks
@@ -70,8 +70,8 @@ table-info:
 
 # Estimate cost (requires infracost to be installed)
 cost:
-    infracost breakdown --path .
+    infracost breakdown --path terraform
 
 # Run security scan (requires tfsec to be installed)
 scan:
-    tfsec .
+    tfsec terraform
