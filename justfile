@@ -30,9 +30,12 @@ validate:
 plan:
     terraform plan -out=tfplan
 
-# Apply Terraform changes
+# Apply Terraform changes from saved plan
 apply:
     terraform apply tfplan
+
+# Plan and apply Terraform changes
+plan-apply: plan apply
 
 # Destroy Terraform resources
 destroy:
@@ -58,8 +61,8 @@ cleanup:
 # Run all pre-apply checks
 check: format-all validate plan
 
-# Full cycle: check, apply, and show
-cycle: check apply show
+# Full cycle: check, plan-apply, and show
+cycle: check plan-apply show
 
 # Get DynamoDB table info (adjust the table name if necessary)
 table-info:
