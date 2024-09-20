@@ -7,8 +7,8 @@ provider "aws" {
 resource "aws_dynamodb_table" "product_table" {
   name           = "ProductTable"
   billing_mode   = "PROVISIONED"
-  read_capacity  = 1
-  write_capacity = 1
+  read_capacity  = 5
+  write_capacity = 5
   hash_key       = "PK"
   range_key      = "SK"
 
@@ -38,8 +38,8 @@ resource "aws_dynamodb_table" "product_table" {
     hash_key        = "GSI1PK"
     range_key       = "GSI1SK"
     projection_type = "ALL"
-    read_capacity   = 1
-    write_capacity  = 1
+    read_capacity   = 5
+    write_capacity  = 5
   }
 
   tags = {
