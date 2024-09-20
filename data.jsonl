@@ -1,4 +1,100 @@
-{"name":"Vigo Pepperoncini Greek Peppers","price":33.78,"price_per_lb":33.78,"price_per_oz":2.11,"store":"Kroger","volume":"16 oz","weight":1.0,"on_sale":true,"datetime":"2024-09-19T12:00:00Z"}
-{"name":"Jeffs Garden Pepper Whole Greek Peperoncini","price":46.99,"price_per_lb":10.44,"price_per_oz":0.65,"store":"Kroger","volume":"72 oz","weight":4.5,"on_sale":true,"datetime":"2024-09-19T12:00:00Z"}
-{"name":"Bella Pepper Salad Pepperoncini","price":60.99,"price_per_lb":5.08,"price_per_oz":0.32,"store":"Kroger","volume":"192 oz","weight":12.0,"on_sale":true,"datetime":"2024-09-19T12:00:00Z"}
-{"name":"Delallo Pepperoncini Mild","price":58.99,"price_per_lb":6.15,"price_per_oz":0.38,"store":"Kroger","volume":"153 oz","weight":9.5625,"on_sale":true,"datetime":"2024-09-19T12:00:00Z"}
+{"name":"Simple Truth Organic™ Pitted Kalamata Olives","price":5.99,"price_per_lb":15.97,"store":"QFC","volume":"6 oz","weight":0.375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Simple Truth Organic™ Sliced Kalamata Olives","price":5.99,"price_per_lb":15.97,"store":"QFC","volume":"6 oz","weight":0.375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta™ Pitted Greek Kalamata Olives","price":7.49,"price_per_lb":12.61,"store":"QFC","volume":"9.5 oz","weight":0.594,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Sliced Greek Kalamata Olives","price":7.49,"price_per_lb":12.61,"store":"QFC","volume":"9.5 oz","weight":0.594,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Pearls® Specialties® Pitted Kalamata Greek Olives","price":4.29,"price_per_lb":11.44,"store":"QFC","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta™ Sliced Greek Kalamata Olives","price":5.99,"price_per_lb":16.67,"store":"QFC","volume":"5.75 oz","weight":0.359,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Pearls Specialties Sliced Kalamata Greek Olives","price":4.29,"price_per_lb":10.25,"store":"QFC","volume":"6.7 oz","weight":0.419,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Murray's Pitted Kalamata Olives","price":7.99,"price_per_lb":21.31,"store":"QFC","volume":"6 oz","weight":0.375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Murray's Kalamata Olives","price":7.99,"price_per_lb":20.31,"store":"QFC","volume":"6.3 oz","weight":0.394,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta™ Napa Valley Bistro Pitted Kalamata Olives with Cabernet & Herbs","price":9.99,"price_per_lb":9.99,"store":"QFC","volume":"16 oz","weight":1.0,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Jeff's Naturals Olives Organic Greek Sliced Kalamata","price":60.99,"price_per_lb":23.16,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Organic Pitted Kalamata Olives","price":64.29,"price_per_lb":28.57,"store":"QFC","volume":"36 oz","weight":2.25,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina - Organic Kalamata Olives","price":64.49,"price_per_lb":27.01,"store":"QFC","volume":"38.1 oz","weight":2.381,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Pitted Greek Kalamata Olives","price":98.63,"price_per_lb":13.85,"store":"QFC","volume":"114 oz","weight":7.125,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Pearls Specialties Pitted Kalamata Greek Olives","price":21.63,"price_per_lb":28.84,"store":"QFC","volume":"12 oz","weight":0.75,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea N America Olives Kalamata Snkpk Organic","price":51.99,"price_per_lb":45.21,"store":"QFC","volume":"18.4 oz","weight":1.15,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina - Organic Kalamata Sliced Olives","price":64.73,"price_per_lb":30.73,"store":"QFC","volume":"33.6 oz","weight":2.1,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Valley Farms - Pitted Kalamata Olives","price":19.99,"price_per_lb":8.0,"store":"QFC","volume":"40 oz","weight":2.5,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Kalamata Olives Pitted","price":66.99,"price_per_lb":25.47,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Pitted Greek Kalamata Olives","price":59.63,"price_per_lb":16.68,"store":"QFC","volume":"57 oz","weight":3.563,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Organic Kalamata Olives","price":58.99,"price_per_lb":28.67,"store":"QFC","volume":"33 oz","weight":2.063,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Olives - Organic - Kalamata - Pitted - Original","price":79.03,"price_per_lb":28.22,"store":"QFC","volume":"44.8 oz","weight":2.8,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina - Organic Pitted Kalamata Olives","price":63.50,"price_per_lb":28.22,"store":"QFC","volume":"36 oz","weight":2.25,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Jeff's Garden Natural Pitted Greek Kalamata Olives","price":60.34,"price_per_lb":22.91,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Pitted Greek Kalamata Olives","price":69.61,"price_per_lb":19.47,"store":"QFC","volume":"57 oz","weight":3.563,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Valley Farms - Whole Kalamata Olives","price":19.99,"price_per_lb":8.0,"store":"QFC","volume":"40 oz","weight":2.5,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Olives - Kalamata - Pitted","price":88.22,"price_per_lb":31.51,"store":"QFC","volume":"44.8 oz","weight":2.8,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Gourmet Olives Handpicked Kalamata Marinated Olives","price":5.37,"price_per_lb":20.46,"store":"QFC","volume":"4.2 oz","weight":0.263,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Greek Olives Pitted Kalamata Olives","price":5.54,"price_per_lb":16.71,"store":"QFC","volume":"5.3 oz","weight":0.331,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mt Vikos Kalamata Olive Spread","price":47.20,"price_per_lb":16.49,"store":"QFC","volume":"45.6 oz","weight":2.85,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mario 30g Kalamata Pitted Snack Olive Seasoned with a Hint Of Thyme","price":26.00,"price_per_lb":51.56,"store":"QFC","volume":"12.7 oz","weight":0.794,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Jeff's Garden Kalamata Olive","price":69.66,"price_per_lb":26.45,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea North America Olive Snack Pack Kalamata Pitted","price":46.99,"price_per_lb":40.86,"store":"QFC","volume":"18.4 oz","weight":1.15,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Peloponnese Olive Kalamata","price":52.99,"price_per_lb":20.14,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"3.5oz Kalamata Olive Tapenade","price":27.00,"price_per_lb":30.86,"store":"QFC","volume":"14 oz","weight":0.875,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"3.5oz Organic Kalamata Olive Tapenade","price":28.00,"price_per_lb":32.0,"store":"QFC","volume":"14 oz","weight":0.875,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Jeff's Natural Jeff's Natural Kalamata Olive - Kalamata","price":60.35,"price_per_lb":22.92,"store":"QFC","volume":"42 oz","weight":2.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Olive Kalamata Pitted","price":59.99,"price_per_lb":16.8,"store":"QFC","volume":"57 oz","weight":3.563,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Kalamata Pitted Olive Organic","price":57.99,"price_per_lb":25.77,"store":"QFC","volume":"36 oz","weight":2.25,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Organic Olive Snack Pitted Kalamata","price":2.96,"price_per_lb":20.63,"store":"QFC","volume":"2.3 oz","weight":0.144,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea Organic Kalamata Pitted Olives - Original","price":93.25,"price_per_lb":33.3,"store":"QFC","volume":"44.8 oz","weight":2.8,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Smoked Kalamata Olives","price":54.99,"price_per_lb":18.83,"store":"QFC","volume":"46.8 oz","weight":2.925,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Divina Organic Pitted Kalamata Olives","price":52.99,"price_per_lb":23.55,"store":"QFC","volume":"36 oz","weight":2.25,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Krinos Olive Kalamata","price":63.99,"price_per_lb":10.66,"store":"QFC","volume":"96 oz","weight":6.0,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Gaea North America Olive Kalamata Pitted Organic","price":82.99,"price_per_lb":29.64,"store":"QFC","volume":"44.8 oz","weight":2.8,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Peloponnese Olive Spread Kalamata","price":50.99,"price_per_lb":18.16,"store":"QFC","volume":"45 oz","weight":2.813,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Organic Greek Pitted Kalamata","price":6.99,"price_per_lb":29.76,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Spanish Manzanilla Pimiento Stuffed","price":10.49,"price_per_lb":8.0,"store":"Safeway","volume":"21 oz","weight":1.3125,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Spanish Manzanilla Pimiento Stuffed","price":4.29,"price_per_lb":11.93,"store":"Safeway","volume":"5.75 oz","weight":0.359375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Pitted California Ripe Extra Large","price":3.29,"price_per_lb":8.77,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Olives Greek Pitted Kalamata","price":7.79,"price_per_lb":13.13,"store":"Safeway","volume":"9.5 oz","weight":0.59375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Olives Greek Sliced Kalamata","price":7.79,"price_per_lb":13.13,"store":"Safeway","volume":"9.5 oz","weight":0.59375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Musco Family Olive Co. Pearls Pitted Kalamata","price":5.29,"price_per_lb":14.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature Reserve Olives Calamata Pitted Marinated","price":7.99,"price_per_lb":18.26,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature Reserve Calamata Pitted Marinated","price":10.49,"price_per_lb":14.99,"store":"Safeway","volume":"11.2 oz","weight":0.7,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Kalamata & Green Olive Bread Loaf","price":5.49,"price_per_lb":null,"store":"Safeway","volume":null,"weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Pitted California Ripe Medium","price":3.29,"price_per_lb":8.77,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Queen Spanish Stuffed Pimiento","price":18.99,"price_per_lb":14.47,"store":"Safeway","volume":"21 oz","weight":1.3125,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"DeLallo Olives Calamata Jumbo Cup","price":4.49,"price_per_lb":13.07,"store":"Safeway","volume":"5.5 oz","weight":0.34375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature Reserve Olives Medley Pitted Marinated","price":7.99,"price_per_lb":18.26,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Napoleon Olive Kalamata Sliced Organic","price":7.99,"price_per_lb":21.31,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Pitted Ripe Large Can","price":2.29,"price_per_lb":6.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Sliced Ripe","price":1.67,"price_per_lb":11.87,"store":"Safeway","volume":"2.25 oz","weight":0.140625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Olives Spanish Queen Pimiento Stuffed","price":9.49,"price_per_lb":15.18,"store":"Safeway","volume":"10 oz","weight":0.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Ithaca Kalamata Olive Hummus","price":5.99,"price_per_lb":9.58,"store":"Safeway","volume":"10 oz","weight":0.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Olives Stuffed Garlic","price":8.99,"price_per_lb":14.38,"store":"Safeway","volume":"10 oz","weight":0.625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Queen Stuffed With Blue Cheese","price":6.99,"price_per_lb":15.98,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Queen Stuffed W Garlic & Jalapeno","price":6.99,"price_per_lb":15.98,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Stuffed Queen Olives","price":12.49,"price_per_lb":14.27,"store":"Safeway","volume":"14 oz","weight":0.875,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Sliced California Ripe","price":3.99,"price_per_lb":9.82,"store":"Safeway","volume":"6.5 oz","weight":0.40625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Crafted Medium Pitted Green Oliv","price":3.49,"price_per_lb":9.31,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Sliced Ripe","price":3.29,"price_per_lb":8.09,"store":"Safeway","volume":"6.5 oz","weight":0.40625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Kens Steak House Dressing Simple Greek","price":4.29,"price_per_lb":null,"store":"Safeway","volume":"16 fl oz","weight":null,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Sliced California","price":2.49,"price_per_lb":17.69,"store":"Safeway","volume":"2.25 oz","weight":0.140625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Manzanilla Pimiento Jar","price":4.29,"price_per_lb":9.81,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Pitted Ripe Medium Can","price":2.29,"price_per_lb":6.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Musco Family Olive Co. Pearls Sliced Kalamata","price":5.29,"price_per_lb":12.64,"store":"Safeway","volume":"6.7 oz","weight":0.41875,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"O Organics Organic Olives Kalamata Pitted","price":6.49,"price_per_lb":16.35,"store":"Safeway","volume":"6.35 oz","weight":0.396875,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Artisan Kalamata Green Olive Loaf Bread Slice","price":4.99,"price_per_lb":null,"store":"Safeway","volume":null,"weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Laura Chenel Chevre Kalamata Olive Goat","price":6.99,"price_per_lb":27.96,"store":"Safeway","volume":"4 oz","weight":0.25,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Stuffed Garlic","price":5.49,"price_per_lb":19.51,"store":"Safeway","volume":"4.5 oz","weight":0.28125,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Pitted California Ripe Large","price":3.29,"price_per_lb":8.77,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Pitted Ripe Extra Large Can","price":2.29,"price_per_lb":6.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Sliced California Ripe","price":3.99,"price_per_lb":9.82,"store":"Safeway","volume":"6.5 oz","weight":0.40625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Lindsay Olives Pitted California Ripe Medium","price":3.29,"price_per_lb":8.77,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Musco Family Olive Co. Pearls Stuffed Garlic","price":5.29,"price_per_lb":12.11,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Pitted Ripe Small Can","price":2.29,"price_per_lb":6.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"O Organics Olives Ripe Pitted Large","price":3.79,"price_per_lb":10.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature SELECT Olives Chopped Ripe Can","price":1.67,"price_per_lb":6.28,"store":"Safeway","volume":"4.25 oz","weight":0.265625,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"O Organics Olives Ripe Pitted Medium","price":3.79,"price_per_lb":10.11,"store":"Safeway","volume":"6 oz","weight":0.375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"DeLallo Olive Medley Cup","price":4.29,"price_per_lb":13.73,"store":"Safeway","volume":"5 oz","weight":0.3125,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Pearls Olives Blue Cheese Stuffed Greek","price":5.29,"price_per_lb":12.64,"store":"Safeway","volume":"6.7 oz","weight":0.41875,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Signature Reserve Salad Greek Feta","price":7.99,"price_per_lb":18.26,"store":"Safeway","volume":"7 oz","weight":0.4375,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Sabra Greek Olive Tapenade Hummus","price":4.99,"price_per_lb":7.98,"store":"Safeway","volume":"10 oz","weight":0.625,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Primal Kitchen Dressing Caesar with Avocado Oil","price":9.49,"price_per_lb":null,"store":"Safeway","volume":"8 fl oz","weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Primal Kitchen Dressing Ranch with Avocado Oil","price":9.49,"price_per_lb":null,"store":"Safeway","volume":"8 fl oz","weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Peperoncini Greek Golden","price":7.79,"price_per_lb":null,"store":"Safeway","volume":"32 fl oz","weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Kens Steak House Dressing Simple Italian","price":4.29,"price_per_lb":null,"store":"Safeway","volume":"16 fl oz","weight":null,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Mezzetta Peperoncini Greek Golden","price":5.49,"price_per_lb":null,"store":"Safeway","volume":"16 fl oz","weight":null,"on_sale":false,"datetime":"2024-09-18T12:00:00Z"}
+{"name":"Kraft Zesty Italian Salad Dressing Bottle","price":3.69,"price_per_lb":null,"store":"Safeway","volume":"16 fl oz","weight":null,"on_sale":true,"datetime":"2024-09-18T12:00:00Z"}
