@@ -45,8 +45,8 @@ destroy:
 plan-destroy:
     terraform -chdir=terraform plan -destroy -out=destroy.tfplan
 
-# Apply destroy plan without prompting
-destroy-auto: plan-destroy
+# Automatically destroy resources without prompting
+auto-destroy: plan-destroy
     terraform -chdir=terraform apply -auto-approve destroy.tfplan
 
 # Show Terraform state
@@ -68,6 +68,10 @@ cleanup:
 
 # Run all pre-apply checks
 check: format-all validate plan
+
+# Automatically create resources without prompting
+auto-create: check
+    terraform -chdir=terraform apply -auto-approve
 
 # Full cycle: check, plan-apply, and show
 cycle: check plan-apply show
