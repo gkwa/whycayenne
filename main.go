@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strconv"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
@@ -176,32 +175,8 @@ func queryAllPeppers(svc *dynamodb.Client) {
 }
 
 func printItem(item map[string]types.AttributeValue) {
-	product := Product{
-		Name:       item["name"].(*types.AttributeValueMemberS).Value,
-		Price:      parseFloat(item["price"].(*types.AttributeValueMemberN).Value),
-		PricePerLb: parseFloat(item["price_per_lb"].(*types.AttributeValueMemberN).Value),
-		PricePerOz: parseFloat(item["price_per_oz"].(*types.AttributeValueMemberN).Value),
-		Store:      item["store"].(*types.AttributeValueMemberS).Value,
-		Volume:     item["volume"].(*types.AttributeValueMemberS).Value,
-		Weight:     parseFloat(item["weight"].(*types.AttributeValueMemberN).Value),
-		OnSale:     item["on_sale"].(*types.AttributeValueMemberBOOL).Value,
-		DateTime:   item["datetime"].(*types.AttributeValueMemberS).Value,
-	}
-
-	jsonData, err := json.Marshal(product)
-	if err != nil {
-		log.Printf("Error marshaling to JSON: %v", err)
-		return
-	}
-
-	fmt.Println(string(jsonData))
-}
-
-func parseFloat(s string) float64 {
-	f, err := strconv.ParseFloat(s, 64)
-	if err != nil {
-		log.Printf("Error parsing float: %v", err)
-		return 0
-	}
-	return f
+	name := item["name"].(*types.AttributeValueMemberS).Value
+	price := item["price"].(*types.AttributeValueMemberN).Value
+	store := item["store"].(*types.AttributeValueMemberS).Value
+	fmt.Printf("Name: %s, Price: $%s, Store: %s\n", name, price, store)
 }
