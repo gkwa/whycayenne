@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
@@ -75,6 +76,7 @@ func loadData(svc *dynamodb.Client) {
 				"GSI1PK":       &types.AttributeValueMemberS{Value: "CATEGORY#pepper"},
 				"GSI1SK":       &types.AttributeValueMemberS{Value: fmt.Sprintf("PRODUCT#%s", product.Name)},
 				"name":         &types.AttributeValueMemberS{Value: product.Name},
+				"name_lower":   &types.AttributeValueMemberS{Value: strings.ToLower(product.Name)},
 				"price":        &types.AttributeValueMemberN{Value: fmt.Sprintf("%f", product.Price)},
 				"price_per_lb": &types.AttributeValueMemberN{Value: fmt.Sprintf("%f", product.PricePerLb)},
 				"price_per_oz": &types.AttributeValueMemberN{Value: fmt.Sprintf("%f", product.PricePerOz)},
@@ -132,13 +134,13 @@ func queryData(svc *dynamodb.Client, queryString string) {
 		TableName:              aws.String("ProductTable"),
 		IndexName:              aws.String("GSI1"),
 		KeyConditionExpression: aws.String("GSI1PK = :category"),
-		FilterExpression:       aws.String("contains(#name, :queryString)"),
+		FilterExpression:       aws.String("contains(#name_lower, :queryString)"),
 		ExpressionAttributeNames: map[string]string{
-			"#name": "name",
+			"#name_lower": "name_lower",
 		},
 		ExpressionAttributeValues: map[string]types.AttributeValue{
 			":category":    &types.AttributeValueMemberS{Value: "CATEGORY#pepper"},
-			":queryString": &types.AttributeValueMemberS{Value: queryString},
+			":queryString": &types.AttributeValueMemberS{Value: strings.ToLower(queryString)},
 		},
 	}
 

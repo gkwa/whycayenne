@@ -14,8 +14,8 @@ format-justfile:
 format-terraform:
     terraform -chdir=terraform fmt
 
-# Format all files (Justfile and Terraform)
-format-all: format-justfile format-terraform
+# Format all files (Justfile and Terraform and Go)
+format-all: format-justfile format-terraform format-go
     @echo "All files formatted."
 
 # Initialize Terraform
@@ -87,3 +87,7 @@ cost:
 # Run security scan (requires tfsec to be installed)
 scan:
     tfsec terraform
+
+# Format Go files recursively
+format-go:
+    find . -name '*.go' -not -path "./vendor/*" -exec gofumpt -extra -w {} +
