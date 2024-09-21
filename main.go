@@ -33,6 +33,7 @@ func main() {
 	loadFlag := flag.Bool("load", false, "Load data into DynamoDB")
 	unloadFlag := flag.Bool("unload", false, "Remove all data from DynamoDB")
 	queryFlag := flag.String("query", "", "Query by pepper name")
+	verboseFlag := flag.Bool("v", false, "Enable verbose logging")
 	flag.Parse()
 
 	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("ca-central-1"))
@@ -43,7 +44,7 @@ func main() {
 	svc := dynamodb.NewFromConfig(cfg)
 
 	if *loadFlag {
-		loadData(svc)
+		loadData(svc, *verboseFlag)
 	} else if *unloadFlag {
 		unloadData(svc)
 	} else if *queryFlag != "" {
@@ -53,7 +54,7 @@ func main() {
 	}
 }
 
-func loadData(svc *dynamodb.Client) {
+func loadData(svc *dynamodb.Client, verbose bool) {
 	file, err := os.Open("data.jsonl")
 	if err != nil {
 		log.Fatal(err)
@@ -92,6 +93,10 @@ func loadData(svc *dynamodb.Client) {
 		_, err = svc.PutItem(context.TODO(), input)
 		if err != nil {
 			log.Printf("Got error calling PutItem: %s", err)
+		}
+
+		if verbose {
+			log.Printf("PutItem: %s", product.Name)
 		}
 
 		incrementCounter(svc)
