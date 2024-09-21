@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -92,6 +93,8 @@ func loadData(svc *dynamodb.Client) {
 		if err != nil {
 			log.Printf("Got error calling PutItem: %s", err)
 		}
+
+		incrementCounter(svc)
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -124,6 +127,8 @@ func unloadData(svc *dynamodb.Client) {
 		if err != nil {
 			log.Printf("Got error calling DeleteItem: %s", err)
 		}
+
+		decrementCounter(svc)
 	}
 
 	fmt.Println("All data removed from the table")
@@ -149,7 +154,12 @@ func queryData(svc *dynamodb.Client, queryString string) {
 		log.Fatalf("Got error querying table: %s", err)
 	}
 
-	fmt.Printf("Query returned %d items.\n", len(result.Items))
+	totalCount, err := getTotalCount(svc)
+	if err != nil {
+		log.Printf("Error getting total count: %s", err)
+		totalCount = 0
+	}
+	fmt.Printf("Query returned %d items out of %d total records.\n", len(result.Items), totalCount)
 	for _, item := range result.Items {
 		printItem(item)
 	}
@@ -170,7 +180,12 @@ func queryAllPeppers(svc *dynamodb.Client) {
 		log.Fatalf("Got error querying table: %s", err)
 	}
 
-	fmt.Printf("Query returned %d items.\n", len(result.Items))
+	totalCount, err := getTotalCount(svc)
+	if err != nil {
+		log.Printf("Error getting total count: %s", err)
+		totalCount = 0
+	}
+	fmt.Printf("Query returned %d items out of %d total records.\n", len(result.Items), totalCount)
 	for _, item := range result.Items {
 		printItem(item)
 	}
@@ -181,4 +196,65 @@ func printItem(item map[string]types.AttributeValue) {
 	price := item["price"].(*types.AttributeValueMemberN).Value
 	store := item["store"].(*types.AttributeValueMemberS).Value
 	fmt.Printf("Name: %s, Price: $%s, Store: %s\n", name, price, store)
+}
+
+func incrementCounter(svc *dynamodb.Client) error {
+	input := &dynamodb.UpdateItemInput{
+		TableName: aws.String("ProductTable"),
+		Key: map[string]types.AttributeValue{
+			"PK": &types.AttributeValueMemberS{Value: "METADATA"},
+			"SK": &types.AttributeValueMemberS{Value: "COUNTER"},
+		},
+		UpdateExpression: aws.String("ADD #count :inc"),
+		ExpressionAttributeNames: map[string]string{
+			"#count": "count",
+		},
+		ExpressionAttributeValues: map[string]types.AttributeValue{
+			":inc": &types.AttributeValueMemberN{Value: "1"},
+		},
+	}
+
+	_, err := svc.UpdateItem(context.TODO(), input)
+	return err
+}
+
+func decrementCounter(svc *dynamodb.Client) error {
+	input := &dynamodb.UpdateItemInput{
+		TableName: aws.String("ProductTable"),
+		Key: map[string]types.AttributeValue{
+			"PK": &types.AttributeValueMemberS{Value: "METADATA"},
+			"SK": &types.AttributeValueMemberS{Value: "COUNTER"},
+		},
+		UpdateExpression: aws.String("ADD #count :dec"),
+		ExpressionAttributeNames: map[string]string{
+			"#count": "count",
+		},
+		ExpressionAttributeValues: map[string]types.AttributeValue{
+			":dec": &types.AttributeValueMemberN{Value: "-1"},
+		},
+	}
+
+	_, err := svc.UpdateItem(context.TODO(), input)
+	return err
+}
+
+func getTotalCount(svc *dynamodb.Client) (int64, error) {
+	input := &dynamodb.GetItemInput{
+		TableName: aws.String("ProductTable"),
+		Key: map[string]types.AttributeValue{
+			"PK": &types.AttributeValueMemberS{Value: "METADATA"},
+			"SK": &types.AttributeValueMemberS{Value: "COUNTER"},
+		},
+	}
+
+	result, err := svc.GetItem(context.TODO(), input)
+	if err != nil {
+		return 0, err
+	}
+
+	if count, ok := result.Item["count"].(*types.AttributeValueMemberN); ok {
+		return strconv.ParseInt(count.Value, 10, 64)
+	}
+
+	return 0, fmt.Errorf("count not found")
 }

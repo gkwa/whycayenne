@@ -67,7 +67,7 @@ cleanup:
     @echo "Cleanup complete. Project reset to initial state."
 
 # Run all pre-apply checks
-check: format-all validate plan
+check: validate plan
 
 # Automatically create resources without prompting
 auto-create: check
